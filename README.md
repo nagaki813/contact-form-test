@@ -7,7 +7,7 @@
 - docker compose up -d --build
 
 ### Laravel環境構築
-- docker-compose exec php bash
+- docker compose exec php bash
 - composer install
 - cp .env.example .env
 - .envファイルの環境変数を適宜変更

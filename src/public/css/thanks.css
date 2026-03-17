@@ -1,0 +1,49 @@
+.thanks-wrap {
+    position: relative;
+    min-height: calc(100vh - 110px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.thanks-wrap::before {
+    content: "Thank you";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -52%);
+    font-size: clamp(110px, 15vw, 220px);
+    color: rgba(139,121,105,0.05);
+    white-space: nowrap;
+    pointer-events: none;
+    z-index: 0;
+    font-family: "Inika", "Times New Roman", serif;
+}
+
+.thanks-message {
+    position: relative;
+    z-index: 1;
+    margin: 0 0 40px;
+    font-size: 28px;
+    font-weight: 700;
+    color: #8b7969;
+}
+
+.home-btn {
+    position: relative;
+    z-index: 1;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 140px;
+    height: 46px;
+    background: #8b7969;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.home-btn:hover {
+    opacity: 0.9;
+}

@@ -1,0 +1,89 @@
+.confirm-wrap {
+    max-width: 972px;
+    margin: 0 auto 80px;
+}
+
+.confirm-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #ffffff;
+}
+
+.confirm-table th,
+.confirm-table td {
+    border: 1px solid #e0dfde;
+    padding: 18px 24px;
+    vertical-align: middle;
+    font-size: 16px;
+}
+
+.confirm-table th {
+    width: 305px;
+    background: #bca995;
+    color: #ffffff;
+    text-align: left;
+    font-weight: 400;
+}
+
+.confirm-table td {
+    background: #ffffff;
+    color: #8b7969;
+}
+
+.detail-cell {
+    line-height: 1.8;
+    white-space: pre-wrap;
+}
+
+.confirm-button-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-top: 45px;
+}
+
+.confirm-button-area form {
+    margin: 0;
+}
+
+.send-btn {
+    min-width: 120px;
+    height: 42px;
+    border: none;
+    background: #8b7969;
+    color: #ffffff;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.fix-btn {
+    border: none;
+    background: transparent;
+    color: #8b7969;
+    font-size: 18px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.send-btn:hover,
+.fix-btn:hover {
+    opacity: 0.9;
+}
+
+@media screen and (max-width: 850px) {
+    .confirm-table th,
+    .confirm-table td {
+        display: block;
+        width: 100%;
+    }
+
+    .confirm-table tr {
+        display: block;
+        margin-bottom: 12px;
+    }
+
+    .confirm-button-area {
+        gap: 20px;
+    }
+}

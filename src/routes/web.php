@@ -1,0 +1,14 @@
+<?php
+
+use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ContactController;
+
+Route::get('/', [ContactController::class, 'index']);
+Route::post('/confirm', [ContactController::class, 'confirm']);
+Route::post('/back', [ContactController::class, 'back']);
+Route::post('/store', [ContactController::class, 'store']);
+Route::get('/thanks', [ContactController::class, 'thanks']);
+
+Route::get('/admin', [ContactController::class, 'admin'])->middleware('auth');
+Route::get('/admin/export', [ContactController::class, 'export'])->name('admin.export')->middleware('auth');
+Route::delete('/admin/delete', [ContactController::class, 'destroy'])->middleware('auth');

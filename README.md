@@ -3,8 +3,8 @@
 ## 環境構築
 
 ### Dockerビルド
-- git clone git@github.com:git@github.com:nagaki813/contact-form-test.git
-- docker-compose up -d --build
+- git clone git@github.com:nagaki813/contact-form-test.git
+- docker compose up -d --build
 
 ### Laravel環境構築
 - docker-compose exec php bash
